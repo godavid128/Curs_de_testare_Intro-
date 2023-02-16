@@ -1,0 +1,58 @@
+copila - traduce codul din sintaxa unui limbaj de prog in masini language
+Python - loosly typed - vag, simplu. ex: nume = 'david'
+Java - strongly typed -puternic. ex: String nume = "david"
+IDE - integrated developement environment - un fel de word m smecher pt programatori
+      Pycharm - python
+      Intellij - Java
+
+Variabile - valori din memorie calculatorului.
+            o cutie unde stocam date. valorile au dif tip de date
+tipuri de date - string - un sir de caract delimi de '' ""
+byte - varsta
+short - int scurt
+long - int lung
+char - un singur caracter
+Integer - num intregi - 3
+float - nr zecimal 3.33
+double - nr  cu m m zecimal -3.33333333
+boolean - A F
+
+operatori - == + - !=
+= op de atribuire x=3
+logici, aritmetici si de comparare
+
+Operatori pt flow control - if else - in orice alt caz, switch
+
+structuri de date - array, liste, maps, dict
+array - dim fixa
+liste - dim dinamica
+prin 'array si liste' accesamm index care ince cu 0
+
+alb rosu galben albastru
+0   1       2       3       index
+sunt imutabil       maps-dict - mutabile
+
+liste - add - adaugam elem noi
+dict - key =>     value
+       CNP =>      "nume"
+       123456789 : "david"
+
+SET => lista de elemente in care fiec elem apare o sing data
+
+Coada => pers1, pers2, pers3
+pop - rezultat a sa fice ca mai raman pers 2, 3
+
+loops - cicluri repetitive
+while - repeta un bloc de cod atat timp cand conditia este True
+for - se folos cand stim cate repetari vrem sa facem
+parcugere array cu ajut lui i (index)
+for each - pt fiec masin din masini
+
+functii
+chrome - shortcut
+return - 1 singur
+tema: avand 3 numere, returnati pe cel mare
+
+
+
+
