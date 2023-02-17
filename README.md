@@ -1,3 +1,3 @@
 Hello, My name is David/
-I studi everyday QA testing
-automation for python
+I study everyday QA testing
+automation with python
