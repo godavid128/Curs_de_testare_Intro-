@@ -1,6 +1,6 @@
 '''
 1. Declaram expected results - user, password, sold
-2. Introducem un username
+2. Introducem un username.
 3. Verificam corectitudinea userului
 4. introducem p parola valida
 5. verificam corectitudinea parolei
