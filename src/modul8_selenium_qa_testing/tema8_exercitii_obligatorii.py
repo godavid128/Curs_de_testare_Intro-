@@ -1,7 +1,7 @@
 import time
 
 from selenium.webdriver.common.by import By
-
+from datetime import datetime
 print('EXERCITII OBLIGATORII')
 """
 Alege-ți unuul sau mai multe din sugestiile de site-uri de mai jos
@@ -30,8 +30,41 @@ ce element vreau să interacționez.
 """
 # 1. https://www.phptravels.net/
 from selenium import webdriver
-driver1 = webdriver.Chrome()
-driver1.find_element(By.XPATH, '//*[@id="root"]/div/div[2]/form/div/div[1]/div/div/input')
-driver1.get('https://formy-project.herokuapp.com/')
+# 1. Am navigat pe link de jos si am gasit elem dupa 'ID', apoi i-am trim key 'Gorodetchi'
+# first_name = webdriver.Chrome()
+# first_name.get('https://formy-project.herokuapp.com/form')
+# first_name.find_element(By.ID, 'first-name').send_keys('Gorodetchi')
+# time.sleep(3)
+print('Navigam pe cateva link si gasim elem dupa: Id, Link_Text, Name, Tag, Class_name, CSS, Xpath')
 
-time.sleep(3)
+# Vom accesa pagina web 'chrome'
+driver = webdriver.Chrome()
+# vom deschide website, vom gasi dupa 'id'
+# driver.get('https://phptravels.net/')
+# element1 = driver.find_element(By.ID, 'fadein')
+# element1.click()
+# element1.send_keys('27-02-2023')
+# time.sleep(30)
+
+# 7. Accesarea website prin elementul 'CSS_SELECTOR'
+# driver.get('https://the-internet.herokuapp.com/')
+# element2 = driver.find_element(By.CSS_SELECTOR, '#content > ul > li:nth-child(3) > a')
+# element2.click()
+# time.sleep(3)
+# element2 = driver.find_element(By.CSS_SELECTOR, '#content > ul > li:nth-child(1) > a')
+# element2.click()
+# time.sleep(3)
+driver.get('https://www.techlistic.com/p/selenium-practice-form.html')
+driver.find_element(By.NAME, 'firstname').send_keys('gorodetchi')
+driver.find_element(By.NAME, 'lastname').send_keys('david')
+driver.find_element(By.ID, 'sex-0').click()
+driver.find_element(By.ID, 'exp-2').click()
+driver.find_element(By.ID, 'datepicker').send_keys('2/20/2023')
+driver.find_element(By.NAME, 'profession').click()
+driver.find_element(By.XPATH, '//*[@id="tool-2"]').click()
+driver.find_element(By.ID, 'continents').send_keys('Europe')
+driver.find_element(By.ID, 'submit').click()
+time.sleep(30)
+driver.quit()
+
+
