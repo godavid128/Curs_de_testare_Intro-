@@ -25,8 +25,10 @@ I would be happy to apply obtained knowledge to testing an operational product a
 It is a crucial step in my current carrer goal, to always become better at what I do.
 
 Among other strong points, I would like to mention what is predominant:
-Logical: I learn everything logically. I associate anything new with familiar things.
-Repetition: I don't like doing repeated things, but I always try to find different solutions.
-Integrity. My principles and values do not allow me to be incorrect, to cheat or to make errors that would affect inter-human relations.
-In their relationships with others, they don't take things personally, which means that they easily get over certain conflicts, and try to maintain good relationships.
-I don't like to put things off, but to do them on time.
+Logical - I learn everything logically. I associate anything new with familiar things.
+Repetition - I don't like doing repeated things, but I always try to find different solutions.
+Integrity -  My principles and values do not allow me to be incorrect, 
+to cheat or to make errors that would affect inter-human relations.
+Relational - In their relationships with others, they don't take things personally, 
+which means that they easily get over certain conflicts, and try to maintain good relationships.
+Punctuality - I don't like to put things off, but to do them on time.
