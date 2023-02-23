@@ -66,5 +66,3 @@ driver.find_element(By.ID, 'continents').send_keys('Europe')
 driver.find_element(By.ID, 'submit').click()
 time.sleep(30)
 driver.quit()
-
-

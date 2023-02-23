@@ -1,8 +1,8 @@
 import time
-# import webdriver
+# 1. import webdriver
 from selenium import webdriver
-# creem  obiectul webdriver
+# 2. creem  obiectul webdriver. Putem sa-l num: driver, browser sau cum vrem noi
 driver = webdriver.Chrome()
-# accesam google.com
+# 1. accesam google.com
 driver.get('https://www.google.fr/')
 time.sleep(3)
