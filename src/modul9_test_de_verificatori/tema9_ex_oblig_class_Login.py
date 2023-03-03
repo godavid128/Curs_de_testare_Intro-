@@ -18,8 +18,8 @@ class Login(unittest.TestCase):
     user = (By.ID, 'username')
     pwd = (By.ID, 'password')
     close_x = (By.LINK_TEXT, '×')
-    label_username = (By.CSS_SELECTOR, '.row:nth-child(1) label')
-    label_pwd = (By.CSS_SELECTOR, '.row:nth-child(2) > .large-6 > label')
+    label_username = (By.XPATH, '//label')
+    label_pwd = (By.XPATH, '//label')
     flash = (By.ID, 'flash')
     flash_succes = (By.CLASS_NAME, 'flash success')
     button_logout = (By.CSS_SELECTOR, ".icon-2x")
@@ -78,29 +78,30 @@ class Login(unittest.TestCase):
     #     self.assertTrue(self.driver.find_element(*self.error_login).is_enabled())
     #     time.sleep(1)
     #
-    # def test9(self):
-    #     # Ia ca o lista toate //label. Verifica textul ca textul de pe ele sa fie
-    #     # cel asteptat (Username si Password). Aici e ok sa avem 2 assert-uri
-    #     self.assertEqual(self.driver.find_element(*self.label_username).text, 'Username')
-    #     self.assertEqual(self.driver.find_element(*self.label_pwd).text, 'Password')
-    #     # todo N-AM STIUT CUM SA IAU CA O LISTA TOATE //LABEL-URILE???
+    def test9(self):
+        # Ia ca o lista toate //label. Verifica textul ca textul de pe ele sa fie
+        # cel asteptat (Username si Password). Aici e ok sa avem 2 assert-uri
+        label = self.driver.find_elements(*self.label_username)
+        self.assertEqual(self.driver.find_element(*self.label_username).text, 'Username')
+        # self.assertEqual(self.driver.find_element(*self.label_pwd).text, 'Password')
+        # todo N-AM STIUT CUM SA IAU CA O LISTA TOATE //LABEL-URILE???
     #
-    def test10(self):
-        # Complet user si pwd valide. Click login.
-        self.driver.find_element(*self.user).send_keys('tomsmith')
-        self.driver.find_element(*self.pwd).send_keys('SuperSecretPassword!')
-        self.driver.find_element(*self.button).click()
-        #  Verifica ca noul url Contine/secure.
-        print(self.driver.current_url)
-        self.assertEqual(self.driver.current_url, 'https://the-internet.herokuapp.com/secure')
-        #  Folos un 'explicit wait' pt elem cu clasa 'flash succes'.
-        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.flash))
-        # todo N-am reusit sa verific dupa CLASS_NAME, ci dupa ID
-        #  Verifica daca elemen cu clasa='flash succes' este displayed
-        self.driver.find_element(*self.flash).is_displayed()
-        # todo nu reusesc sa fac!
-        #  Verifica daca mesajul de pe acest element CONTINE textul 'secure area!'
-        self.assertEqual(self.driver.find_element(*self.flash).text, 'You logged into a secure area!\n×')
+    # def test10(self):
+    #     # Complet user si pwd valide. Click login.
+    #     self.driver.find_element(*self.user).send_keys('tomsmith')
+    #     self.driver.find_element(*self.pwd).send_keys('SuperSecretPassword!')
+    #     self.driver.find_element(*self.button).click()
+    #     #  Verifica ca noul url Contine/secure.
+    #     print(self.driver.current_url)
+    #     self.assertEqual(self.driver.current_url, 'https://the-internet.herokuapp.com/secure')
+    #     #  Folos un 'explicit wait' pt elem cu clasa 'flash succes'.
+    #     WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.flash))
+    #     # todo N-am reusit sa verific dupa CLASS_NAME, ci dupa ID
+    #     #  Verifica daca elemen cu clasa='flash succes' este displayed
+    #     self.driver.find_element(*self.flash).is_displayed()
+    #     # todo nu reusesc sa fac!
+    #     #  Verifica daca mesajul de pe acest element CONTINE textul 'secure area!'
+    #     self.assertEqual(self.driver.find_element(*self.flash).text, 'You logged into a secure area!\n×')
 
     # def test11(self):
     #     # Completeaza cu user si pass valide. Click login.
