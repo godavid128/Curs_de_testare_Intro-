@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 # class unde stocam locatori
-class LoginLocators():
+class Locators:
     text = (By.CLASS_NAME, 'subheader')
     user = (By.ID, 'username')
     pwd = (By.ID, 'password')
