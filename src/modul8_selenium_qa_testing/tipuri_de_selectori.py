@@ -6,6 +6,6 @@ de pe website, aplicatie, etc
     devenit unul dintre cele mai utiliz instrum de testar a automatiz open sourse
 - Selenium - e un tul care iti permite sa instal in python
 
-
+Structura unei pagini web e def pe baza unui limb de prog
 """
 

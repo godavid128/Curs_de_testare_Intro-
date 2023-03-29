@@ -19,7 +19,7 @@ class TestLogin(unittest.TestCase):
 
     def test_invalid_login(self):
         self.assertEqual(self.driver.find_element(*self.text).text, 'This is where you can log into the secure area. ' \
-                                                               'Enter tomsmith jifor the username and SuperSecretPassword! for the password. ' \
+                                                               'Enter tomsmith for the username and SuperSecretPassword! for the password. ' \
                                                                'If the information is wrong you should see error messages.')
 
         self.driver.find_element(*self.user).send_keys('Andreea')

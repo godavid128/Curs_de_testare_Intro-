@@ -6,7 +6,7 @@ Asteptarea elementelor corect:
 - time.sleep(3) - intrerupe executia prog pt x.timp selectat
 '''
 # - Libraria UNITTEST
-# Codul in libr 'unittest' are 3 functii: 'setUp', 'test', 'tearDown'.
+# Codul in libr 'unittest' are 3 functii: 'setUp', 'tests', 'tearDown'.
 # - SIPLE TESTS IN PYTEST
 
 # builtin - incorporat
