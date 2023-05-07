@@ -1,3 +1,4 @@
+
 # BDD = e defapt o practica de dezvoltare a softurilor prin care aduci in mai aproape partea non-tehnica de cea tehnic
   # Ele ajung sa fie teste, si chiar teste automate, prin scrierea cuvint in engleza, care respecta o anumit structura
 # GHERKIN SYNTAX:

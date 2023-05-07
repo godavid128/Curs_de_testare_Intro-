@@ -100,6 +100,7 @@ class TestElefant(unittest.TestCase):
             'Error, mesajul de eroare este incorect'
         self.assertTrue(
             self.driver.find_element(*self.button_cont_conectare1).is_displayed()), 'Error, logare fara cont valid'
+
         # Test 6: Stergeti valoarea de pe campul email si introduceti o valoare invalida (adica fara caracterul "@"),
         # fara sa introduceti si parola si verificati faptul ca butonul este dezactiva
         self.driver.find_element(*self.casuta_email).clear()

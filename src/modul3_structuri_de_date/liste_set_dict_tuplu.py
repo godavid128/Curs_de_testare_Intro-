@@ -1,3 +1,4 @@
+
 # Avem datele: lista, set, tuple, dictionar
 data_type = 'tuple' # daca dam run cu lista va rula ramura liste
 if data_type == 'lista':
